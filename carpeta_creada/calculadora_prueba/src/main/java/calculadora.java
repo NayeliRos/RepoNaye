@@ -11,7 +11,7 @@ public class calculadora {
         System.out.println("Hola, ingresa el segundo número:");
         datoDos = numero.nextDouble();
 
-        System.out.println("¿que tipo de operación quieres realizar ?\n + - * /");
+        System.out.println("¿que tipo de operación quieres realizar ?\n + - * / R ^");
         operacion = numero.next().charAt(0);
 
         switch (operacion) {
@@ -38,6 +38,14 @@ public class calculadora {
                     resultado = datoUno / datoDos;
                     System.out.println("el resultado es:" + resultado);
                 }
+                break;
+            case '^':
+                resultado = calculadora_Avanzada.potencia(datoUno, datoDos);
+                System.out.println("el resultado es:" + resultado);
+                break;
+            case 'R':
+                resultado = calculadora_Avanzada.raizCuadrada(datoUno, datoDos);
+                System.out.println("el resultado es:" + resultado);
                 break;
 
             default:
