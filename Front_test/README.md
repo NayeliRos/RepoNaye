@@ -107,10 +107,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## Credenciales
 
-  Usuario           Contraseña     Rol
+ - Usuario           Contraseña     Rol
   ----------------- -------------- -------------------
-  standard_user     secret_sauce   Usuario normal
-  locked_out_user   secret_sauce   Usuario bloqueado
+ - standard_user     secret_sauce   Usuario normal
+ - locked_out_user   secret_sauce   Usuario bloqueado
 
 ------------------------------------------------------------------------
 
