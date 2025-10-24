@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"c7c48314-db0e-4ca3-b2ff-fa97bcd64a27",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"688e1d9b-b690-474e-a260-59a9ce2b7283",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-09-15 03:18:00 a. m.</div>
+    <div>2025-10-23 11:53:45 p. m.</div>
   </div>
 </div>
 
@@ -81,7 +81,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1688</span>
+              <span>ms:</span>&nbsp;<span>1262</span>
             </div>
           </div>
           <div class="step-row">
@@ -132,7 +132,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>configure headers = { &#39;Content-Type&#39;: &#39;application/json&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">18</div>
+    <div class="time-cell passed">24</div>
   </div>
 
    
@@ -193,7 +193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;usuarios&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -249,7 +249,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1229</div>
+    <div class="time-cell passed">784</div>
   </div>
 
    
@@ -258,17 +258,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.19">03:17:58.683 request:
+  <div class="preformatted" data-parent="0.19">23:53:44.477 request:
 1 &gt; POST https://serverest.dev/usuarios
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 104
 1 &gt; Host: serverest.dev
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.16)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;nome&quot;:&quot;Usuario a eliminar&quot;,&quot;email&quot;:&quot;eliminar123@gmail.com&quot;,&quot;password&quot;:&quot;123456&quot;,&quot;administrador&quot;:&quot;true&quot;}
 
-03:17:59.743 response time in milliseconds: 1058
+23:53:45.042 response time in milliseconds: 563
 1 &lt; 201
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
@@ -278,13 +278,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: e81fdd35f05fae35f22ee15b33cd4eba;o=1
-1 &lt; date: Mon, 15 Sep 2025 08:17:59 GMT
+1 &lt; x-cloud-trace-context: 5013775e951306f7126a40c1c50923d1;o=1
+1 &lt; date: Fri, 24 Oct 2025 04:53:44 GMT
 1 &lt; server: Google Frontend
 1 &lt; Content-Length: 82
 {
     &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
-    &quot;_id&quot;: &quot;FJKTPrRJrIufi2aE&quot;
+    &quot;_id&quot;: &quot;AIhwbnT1cyB7PUoX&quot;
 }
 
 </div>   
@@ -334,7 +334,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def userId = response._id</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -362,7 +362,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;usuarios&#39;, userId</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -390,7 +390,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">415</div>
+    <div class="time-cell passed">411</div>
   </div>
 
    
@@ -399,16 +399,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.25">03:17:59.758 request:
-2 &gt; DELETE https://serverest.dev/usuarios/FJKTPrRJrIufi2aE
+  <div class="preformatted" data-parent="0.25">23:53:45.067 request:
+2 &gt; DELETE https://serverest.dev/usuarios/AIhwbnT1cyB7PUoX
 2 &gt; Content-Type: application/json
 2 &gt; Host: serverest.dev
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.16)
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-03:18:00.168 response time in milliseconds: 407
+23:53:45.478 response time in milliseconds: 411
 2 &lt; 200
 2 &lt; access-control-allow-origin: *
 2 &lt; x-dns-prefetch-control: off
@@ -418,8 +418,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; x-content-type-options: nosniff
 2 &lt; x-xss-protection: 1; mode=block
 2 &lt; content-type: application/json; charset=utf-8
-2 &lt; x-cloud-trace-context: 397f9db9d1ca67b039d53f4e8ff08818
-2 &lt; date: Mon, 15 Sep 2025 08:18:00 GMT
+2 &lt; x-cloud-trace-context: 4f73c3892aae890f848d2f12873e20cc
+2 &lt; date: Fri, 24 Oct 2025 04:53:45 GMT
 2 &lt; server: Google Frontend
 2 &lt; Content-Length: 51
 {
@@ -473,7 +473,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.message contains &#39;Registro excluído com sucesso&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    

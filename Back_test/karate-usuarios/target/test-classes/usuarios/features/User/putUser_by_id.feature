@@ -31,7 +31,7 @@ Scenario: Actualizar datos de usuario
   Then status 200
   And match response.message == 'Registro alterado com sucesso'
 
-Scenario: No permitir email duplicado
+Scenario Outline: No permitir email duplicado
   * def datosDuplicados =
     """
     {
@@ -41,8 +41,12 @@ Scenario: No permitir email duplicado
       "administrador": "false"
     }
     """
-  Given path 'usuarios', 'ZyXwVuTs87654321'
+  Given path 'usuarios', '<idUsuario>'
   And request datosDuplicados
   When method put
   Then status 400
   And match response.message contains 'email já está sendo usado'
+
+Examples:
+  | idUsuario          |
+  | 1234567890abcdef   |

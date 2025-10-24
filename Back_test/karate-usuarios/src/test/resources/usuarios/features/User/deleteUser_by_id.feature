@@ -25,5 +25,3 @@ Scenario: Eliminar usuario creado
   When method delete
   Then status 200
   And match response.message contains 'Registro excluído com sucesso'
-
-  

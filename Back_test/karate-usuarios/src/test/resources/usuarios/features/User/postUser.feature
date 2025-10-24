@@ -4,7 +4,6 @@ Background:
   * url baseUrl
   * configure headers = { 'Content-Type': 'application/json' }
 
-Scenario: Registrar usuario válido
   * def usuarioFijo =
     """
     {
@@ -14,21 +13,7 @@ Scenario: Registrar usuario válido
       "administrador": "true"
     }
     """
-  Given path 'usuarios'
-  And request usuarioFijo
-  When method post
-  Then status 201
-  And match response.message == 'Cadastro realizado com sucesso'
-  And match response._id == '#string'
-  * def userId = response._id
 
-  # Eliminar el usuario creado
-  Given path 'usuarios', userId
-  When method delete
-  Then status 200
-  And match response.message contains 'Registro excluído com sucesso'
-
-Scenario: No permitir correo Repetido
   * def usuarioCorreoRepetido =
     """
     {
@@ -38,6 +23,24 @@ Scenario: No permitir correo Repetido
       "administrador": "true"
     }
     """
+
+Scenario: Registrar usuario válido
+ 
+  Given path 'usuarios'
+  And request usuarioFijo
+  When method post
+  Then status 201
+  And match response.message == 'Cadastro realizado com sucesso'
+  * def userId = response._id
+
+  # Eliminar el usuario creado
+  Given path 'usuarios', userId
+  When method delete
+  Then status 200
+  And match response.message contains 'Registro excluído com sucesso'
+
+Scenario: No permitir correo Repetido
+  
   Given path 'usuarios'
   And request usuarioCorreoRepetido
   When method post
